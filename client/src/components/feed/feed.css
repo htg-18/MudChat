@@ -1,0 +1,9 @@
+.feed{
+    flex: 5.5;
+    /* background-color: #F9F5EB; */
+    background-color: #FAF8ED;
+    width: 100%;
+    z-index: 100;
+}
+
+

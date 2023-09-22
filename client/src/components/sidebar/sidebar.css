@@ -1,0 +1,97 @@
+.sidebar{
+    flex: 2.5;
+    height: calc( 100vh - 50px );
+    overflow-y: scroll;
+    position: sticky;
+    top: 50px;
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    background-color: #f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #D8D8D8;
+   
+}
+.sidebarWrapper{
+   padding: 20px;
+   padding-top: 10px;
+}
+.sidebarList{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.sidebarListItem
+{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    
+}
+.sidebarListItemText{
+    padding-left: 15px;
+}
+.sidebarListButton{
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight:  550;
+    border-style: none;
+    margin-top: 20px;
+}
+.sidebarHr{
+    margin: 20px 0;
+}
+.sidebarFriends{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.sidebarFriend{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    margin-bottom: 15px;
+}
+.FriendImage{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+@media  (max-width: 788px) {
+    .sidebar{
+        flex: 1;
+    }
+    .sidebarListItemText {
+      display: none; /* Show the text when screen size is 768px or more */
+    }
+    .sidebarListButton,.FriendName{
+        display: none;
+    }
+    .sidebarListItem {
+        /* Set the flex direction to column for each list item to stack the icons and hide the text */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px; /* Remove the top padding for each list item */
+      }
+      .sidebarFriend{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+      }
+      .sidebarListItem .sidebarItem {
+        margin-bottom: 5px; /* Add some spacing between the icons */
+      }
+      .sidebarWrapper {
+        padding: 0; /* Remove the padding to make the icons take up the full width */
+      }
+      
+  }

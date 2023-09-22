@@ -1,0 +1,165 @@
+.rightbar{
+    flex: 3;
+    /* height: calc( 100vh - 50px );
+    overflow-y: scroll;
+    position: sticky;
+    top: 50px; */
+    /* background-color: #F9F5EB; */
+    background-color: #FAF8ED;
+}
+.rightbarWrapper{
+   /* padding-left: 0px; */
+   margin-left: 30px;
+   padding-right: 15px;
+}
+.birthdayContainer{
+    display: flex;
+    align-items: center;
+ margin-top: 20px;
+}
+
+.birthdayImage{
+    height: 50px;
+    width: 50px;
+    margin-right: 9px;
+} 
+.birthdayText{
+    font-weight: 300;
+    font-size: 15px;
+}
+.adImg{
+    width: 100%;
+    height: 230px;
+    border-radius: 15px;
+    margin: 27px 0;
+    /* box-shadow: 1px 1px 12px -4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 1px 12px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 12px -4px rgba(0,0,0,0.75); */
+}
+.rightbarFriendList{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.rightbarFriend{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.rightbarImageContainer{
+    margin-right: 10px;
+    position: relative;
+}
+.rightImg
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.righbarOnline{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    color: green;
+    position: absolute;
+}
+.rightbarTitle{
+    margin-bottom: 10px;
+}
+.rightItem{
+    color: green;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+     left: -8px;
+    top: 2px;
+    right: 2px;
+    border: none;
+    /* border: 2px solid white ; */
+    
+}
+.rightbarUsername{
+    font-weight: 500;
+}
+.rightbarTitle{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.userFollowingImg{
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+.rightbarInfo{
+    margin-bottom: 30px;
+}
+.rightbarInfoItem{
+    margin-bottom: 10px;
+}
+.rightbarInfoKey{
+    font-weight: 500;
+    margin-right: 15px;
+    color: #555;
+}
+.rightbarInfoValue{
+    font-weight: 300;
+}
+.userFollowings{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.userFollowing{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    cursor: pointer;
+}
+.userFollowingName{
+    margin-top: 5px;
+}
+.righbarFollowButton{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #61892F;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}
+.righbarFollowButton:focus{
+    outline: none;
+}
+@media (max-width:1000px) {
+    .rightbar{
+        flex: 0.4;
+    }
+    .rightbarWrapper{
+        margin: 0;
+        padding: 0;
+        display: none;
+    }
+}
+/* @media (max-width: 800px) {
+    .rightbar{
+        padding-left: 30px;
+        flex: 2.5;
+    }
+    .rightbarWrapper{
+        margin: 0;
+        padding: 0;
+        display: none;
+    }
+} */
+
